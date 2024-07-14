@@ -1,0 +1,29 @@
+{
+  "name": "My Diary",
+  "version": "1.0.0",
+  "description": "In this application users have the ability to save their personal notes. There is a 30-day period during which deleted notes can be recovered from the trash bin Users can create an account or log in using their Google credentials. Additionally, there is a feature to mark notes as favorites for easy access.Users can also change background of notes.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./index.js",
+    "start": "node index.js"
+  },
+  "author": "Mandeep Singh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.2",
+    "react-router-dom": "^6.11.2",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
