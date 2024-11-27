@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+/* -------------------------------- atuh section css----------------------------- */
+.auth_section {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.529),
+      rgba(0, 0, 0, 0.89)
+    ),
+    url("../images/bg_1.jpg") no-repeat center center/cover;
+    background-position: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.inner_auth_div {
+  width: 40%;
+  padding: 16px 20px;
+}
+
+/*  -------------------------- home section css ------------------------------ */
+.home_section {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1579017308347-e53e0d2fc5e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80")
+      no-repeat center center/cover;
+  min-height: 100vh;
+  max-width: 100vw;
+
+}
+.home_section div {
+  min-height: calc(90vh - 20px);
+  max-width: 100vw;
+}
+.home_title {
+  font-size: 59px;
+  line-height: 1.3;
+  padding-top: 30px;
+}
+
+.home_title span:last-child {
+  font-size: 30px;
+  color: #ccc;
+}
+
+/*  ----------------------- header ------------------------------------------ */
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.btn-close:focus,
+.btn-close:hover,
+.navbar-toggler {
+  box-shadow: none;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #000;
+}
+.active {
+  color: #000;
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 25%;
+  /* transform: translate(-20% , 0); */
+  bottom: 4px;
+  width: 70px;
+  background: #222;
+  /* background: linear-gradient(to right, #000000dc, rgba(255, 237, 38, 0.849)); */
+  /* background: rgba(255,193,7, 1) */
+}
+
+/*  ----------------------------- main dadhboard css --------------------------------- */
+.main_content {
+  min-height: 80vh;
+}
+
+.form-control:focus,
+.form-control:hover {
+  box-shadow: none;
+}
+
+.circle-plus {
+  position: sticky;
+  bottom: 5%;
+  left: 90%;
+  animation: bounce 2s ease infinite;
+  cursor: pointer;
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------- utility Classes (custom)----------------------- */
+.cursor-pointer {
+  cursor: pointer;
+}
+.grow-1:hover {
+  transition: 0.3s all linear;
+  transform: scale(1.3);
+}
+
+
+
+
+/*  --------------------- media query ------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .inner_auth_div {
+    width: 80%;
+    padding: 16px 10px;
+  }
+  
+}

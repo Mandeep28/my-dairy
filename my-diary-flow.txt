@@ -1,0 +1,68 @@
+About
+In this application users have the ability to save their personal notes. There is a 30-day period during which deleted notes can be recovered from the trash bin Users can create an account or log in using their Google credentials. Additionally, there is a feature to mark notes as favorites for easy access.Users can also change background of notes.
+
+
+Flow of magic notes : 
+
+1. login with email or through google 
+2. If user have no account , then register first name, last name, email , comfirm pass, pass or register with google
+2. Then add notes , make then fav , edit them or delete 
+3. Deleted notes can be recover with 30 days , or user can permanent delete them. 
+
+
+BACKEND : 
+
+login (include login with google)
+register (include login with google)
+
+add note (title, discription, colorMode)
+edit note - 
+get single note
+
+get all notes (searchable + pagination)
+
+
+models : 
+user -----> 
+first name
+last name
+name
+email
+password (encrypt)
+auth token
+mail_verify: {
+    is_verified
+    verified_at
+    verification_token
+}
+password_verify: {
+    is_verified
+    verified_at
+    verfication_token
+}
+created_at
+updated_at
+
+notes -------> 
+title 
+description
+userId
+is_fav
+deleted: {
+    is_deleted
+    deleted_at
+}
+created_at
+updated_at
+
+
+
+FRONTEND: 
+1. home page 
+2. auth page ----> login, login with google, register, register with google, forgot password
+3. dasboard -----> all notes, fav notes, trash-bin, setting, add note, edit note
+
+
+
+
+
